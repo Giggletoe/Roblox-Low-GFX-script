@@ -1,0 +1,9 @@
+-- get all the objects in the game
+local allObjects = game:GetDescendants()
+
+-- loop through all objects and set the transparency of textures to 1
+for i, object in ipairs(allObjects) do
+    if object:IsA("Texture") then
+        object.Transparency = 1
+    end
+end
