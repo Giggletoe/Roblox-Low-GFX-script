@@ -1,0 +1,9 @@
+-- get all the objects in the game
+local allObjects = game:GetDescendants()
+
+-- loop through all objects and set the material of parts to Plastic
+for i, object in ipairs(allObjects) do
+    if object:IsA("BasePart") then
+        object.Material = Enum.Material.Plastic
+    end
+end
